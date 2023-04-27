@@ -15,7 +15,11 @@ useEffect(()=>{
     setitem(datas)
     setsearchitem(datas)
 
-  })
+  });
+
+    return ()=>{
+        setitem([])
+    }
 },[])
 
 const searchfunc=(text)=>{
